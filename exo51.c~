@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+void    getVerb(char *str){
+  int   i;
+  char  strLocal[129];
+  char	*fgetsreturn;
+
+  do{
+    printf("Sentence:\n");
+  }
+  while (!fgets(strLocal, sizeof strLocal, stdin));
+  i = strlen(strLocal);
+  if (strLocal[i-1] < 'A')
+    strLocal[i-1] = '\0';
+  strcpy(str, strLocal);
+}
+
+int	main(){
+  char  str[129];
+  getVerb(str);
+  printf("%s\n", str);
+  return (1);
+}

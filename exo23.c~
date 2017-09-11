@@ -1,0 +1,25 @@
+#include <stdio.h>
+int	somme(int n) {
+  if (n == 1)
+      return 1;
+  return 1 / n + somme(--n);
+}
+
+int	main(){
+  int	n;
+  
+  do {
+    printf("Please, give a positif number\n");
+    scanf("%d", &n);
+    if(n <= 0)
+      {
+	printf("Please, a number bigger that 0\n");
+	continue;
+      }
+  }
+  while (n)
+    {
+      printf("the sum is %d\n", somme(n));
+      return (1);
+    }
+}

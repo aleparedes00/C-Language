@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include "doc.h"
+
+#define NB 1
+
+void		read_point(t_point *curve, int n)
+{
+  int	i;
+  char	buffer[128];
+
+  i = 0;
+  while (i < NB){
+    printf("Please write here the point\n");
+    while (sscanf(buffer, "%d", curve[i].x))
+      printf("The point is %c\n", curve->a);
+  }
+}
+
+
+int		main(){
+  t_point	courbe[NB];
+  courbe[1].a ='A';
+  courbe[1].y = 20;
+  read_point(courbe, 1);
+  return (1);
+}

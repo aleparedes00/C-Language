@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define NVALUE 10;
+void	read(){
+  int	t[NVALUE];
+  int	i;
+  int	max;
+  int	min;
+
+  for(i = 0; i < NVALUE; i++)
+    {
+      printf("Donnez un numéro entier\n");
+      scanf("%d", t[i]);
+    }
+  for(i = 0; i < NVALUE; i++)
+    {
+      if ()
+    }
+}

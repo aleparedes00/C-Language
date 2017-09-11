@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void	maxmin(int *t, int n, int *max, int *min){
+
+  int	i;
+
+  i = 0;
+  while (i < n)
+    {
+      if (t[i] > max)
+	max = t[i];
+      else if (t[i] < min)
+	min = t[i];
+    }
+}

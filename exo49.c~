@@ -1,0 +1,30 @@
+#include <stdio.h>
+char	*getText(){
+  char	str[129];
+
+  printf("Entrez une phrase\n");
+  fgets(str, sizeof str, stdin);
+  return (str);
+}
+
+int	countE(){
+  int	i;
+  int	count;
+  char	*str;
+
+  i = 0;
+  count = 0;
+  str = getText();
+  while (str && str[i] != '\0'){
+    if(str[i] == 101)
+      count++;
+    i++;
+  }
+  return (count);
+}
+
+int	main(){
+
+  printf("The amount of e is %d times\n", countE());
+  return (1);
+}

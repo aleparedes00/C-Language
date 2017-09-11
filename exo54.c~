@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include "doc.h"
+
+t_point		is_negative(t_point *p){
+
+
+}

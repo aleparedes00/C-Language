@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void	main(){
+  int	i, n, som;
+  som = 0;
+  i = 0;
+  while (i < 4)
+    {
+      printf ("donnez un entier ");
+      scanf ("%d", &n);
+      som += n;
+      i++;
+}
+  prinf("Somme : %d\n", som);
+
+}
